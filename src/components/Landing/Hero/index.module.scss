@@ -37,17 +37,17 @@
   }
   &_deco {
     &_rocket {
-      position: absolute;
+      position: absolute !important;
       left: 19rem;
       bottom: 0;
     }
     &_bulb {
-      position: absolute;
+      position: absolute !important;
       right: 15rem;
       bottom: 0;
     }
     &_purple {
-      position: absolute;
+      position: absolute !important;
       left: 0;
       bottom: 0;
       height: 55.2rem;
@@ -56,7 +56,7 @@
       transform: translateX(-20%);
     }
     &_success {
-      position: absolute;
+      position: absolute !important;
       right: 0;
       bottom: 0;
       height: 55.2rem;

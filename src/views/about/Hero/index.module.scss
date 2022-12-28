@@ -29,7 +29,7 @@
   &_puzzle,
   &_globe,
   &_monitor {
-    position: absolute;
+    position: absolute !important;
   }
   &_paper {
     top: 9.6rem;
