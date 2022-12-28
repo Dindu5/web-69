@@ -1,0 +1,37 @@
+.chip {
+  padding: 1.4rem 1.8rem;
+  border-radius: 5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: $font-founders-regular;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: max-content;
+
+  img {
+    width: 2.1rem;
+    height: 100%;
+    object-fit: contain;
+  }
+  p {
+    margin-left: 0.8rem;
+    margin-bottom: -0.4rem;
+  }
+  &-primary {
+    background: rgba(109, 29, 247, 0.05);
+    color: $col-primary-700;
+  }
+  &-secondary {
+    background: rgba(255, 230, 0, 0.15);
+    color: #ffac33;
+  }
+  &-success {
+    background: rgba(83, 178, 139, 0.1);
+    color: #53b28b;
+  }
+  &-error {
+    background: rgba(231, 93, 69, 0.09);
+    color: #dd2e44;
+  }
+}

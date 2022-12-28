@@ -1,0 +1,77 @@
+.blog_card {
+  margin-bottom: 0.6rem;
+  &_image {
+    position: relative;
+    cursor: pointer;
+    > div {
+      border-radius: 2.24rem;
+    }
+  }
+  &_badge {
+    font-weight: 700;
+    font-size: 1.39655rem;
+    line-height: 1.7rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1.11724px;
+    text-transform: uppercase;
+    color: #5d6a83;
+    padding: 1.1rem 1.9rem;
+    padding-bottom: 0.7rem;
+    position: absolute;
+    right: 1.6rem;
+    bottom: 3.7rem;
+    background: #ffffff;
+    border: 0.27931rem solid #f2f6ff;
+    box-shadow: 0px 0.5rem 0px rgba(0, 0, 0, 0.06);
+    border-radius: 0.8rem !important;
+  }
+  h4 {
+    font-weight: 700;
+    font-size: 2.79rem;
+    font-family: $font-founders-medium;
+    line-height: 3.7rem;
+    color: #061c23;
+    margin: 2.7rem 0rem;
+  }
+  &_author {
+    display: flex;
+    align-items: center;
+    > div {
+      width: 4.1rem;
+      height: 4.1rem;
+      margin-right: 1.4rem;
+      border-radius: 50%;
+    }
+    p {
+      font-weight: 500;
+      font-size: 1.95517rem;
+      line-height: 2.5rem;
+      color: #5d6a83;
+    }
+  }
+  &_small {
+    .blog_card_image {
+      > div {
+        border-radius: 1.3rem;
+      }
+    }
+    h4 {
+      font-size: 1.9rem;
+      line-height: 2.8rem;
+      margin: 2.4rem 0rem;
+      margin-bottom: 1.3rem;
+    }
+    .blog_card_author {
+      > div {
+        width: 3.1rem !important;
+        height: 3.1rem !important;
+        margin-right: 1.3rem !important;
+      }
+      p {
+        font-size: 1.5rem;
+        line-height: 2.1rem;
+      }
+    }
+  }
+}

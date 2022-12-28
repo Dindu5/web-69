@@ -1,0 +1,27 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12.7rem;
+  margin-top: 6rem;
+  &_logo {
+    max-width: 16.7rem;
+    height: 100%;
+  }
+  &_links {
+    a {
+      transition: all 0.6s;
+      font-size: 2rem;
+      font-weight: 500;
+      font-family: $font-founders-medium;
+      color: $col-neutral-600;
+      margin-right: 5.166rem;
+      &:last-child {
+        margin-right: 0rem;
+      }
+    }
+    &_active {
+      color: $col-primary-900 !important;
+    }
+  }
+}

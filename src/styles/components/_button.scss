@@ -1,0 +1,33 @@
+.btn {
+  border: none;
+  padding: 2.1rem 2.6rem;
+  border-radius: 7rem;
+  outline: none;
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: $font-founders-regular;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1.9rem;
+  &_lg {
+    padding: 1.8rem 3.2rem;
+  }
+  &_xl {
+    padding: 2rem 4.2rem;
+    padding-bottom: 1.8rem;
+  }
+  &-primary {
+    background-color: $col-primary-800;
+    color: $col-white;
+    &-text {
+      background-color: rgba(109, 29, 247, 0.05);
+      color: $col-primary-700;
+    }
+  }
+  &-white {
+    background-color: $col-white;
+    color: $col-primary-700;
+    // font-family: $font-neue-regular;
+  }
+}

@@ -1,0 +1,36 @@
+.footer {
+  margin-top: 2rem;
+  padding: 5.2rem 12.7rem;
+  background: #7c3aed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("/images/footer-bg.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  h4 {
+    color: $col-white;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    font-family: $font-aeonik-bold;
+  }
+  &_icon {
+    margin-left: 1.6rem;
+    cursor: pointer;
+  }
+  &_links {
+    display: flex;
+    a {
+      font-weight: 500;
+      font-family: $font-founders-medium;
+      font-size: 2.4rem;
+      line-height: 2.9rem;
+      color: $col-white;
+
+      &:nth-child(2) {
+        margin: 0 7rem;
+      }
+    }
+  }
+}

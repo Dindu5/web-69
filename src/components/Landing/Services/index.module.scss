@@ -1,0 +1,137 @@
+.services {
+  padding: 13.2rem 12.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h2 {
+    font-weight: 800;
+    font-size: 5.9rem;
+    line-height: 6.8rem;
+    text-align: center;
+    font-family: $font-neue-bold;
+    color: $col-neutral-900;
+    max-width: 111.1rem;
+    margin-top: 4.304rem;
+    margin-bottom: 14.6rem;
+  }
+  &_title {
+    font-weight: 800;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    color: $col-white;
+    margin-bottom: 2.1rem;
+    font-family: $font-neue-bold;
+  }
+  &_desc {
+    font-weight: 500;
+    font-size: 2.1rem;
+    line-height: 2.9rem;
+    margin-bottom: 4rem;
+    color: $col-white;
+  }
+  &_button {
+    padding: 0;
+    background: none;
+    border: none;
+    color: $col-white;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    font-family: $font-founders-regular;
+  }
+  &_box {
+    max-width: 129.6rem;
+    margin: auto;
+    display: grid;
+    grid-gap: 2.4rem;
+    grid-template-areas:
+      "writing writing"
+      "ui frontend"
+      "backend backend"
+      "web3 cms";
+
+    &_writing {
+      grid-area: writing;
+      border-radius: 2.4rem;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      > div:first-child {
+        background: rgba(108, 75, 141, 1);
+        padding: 16.2rem 8rem 9.5rem 8rem;
+        max-width: 69.9rem;
+      }
+      img {
+        width: 59.7rem;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    &_images {
+      object-fit: contain;
+    }
+    &_ui,
+    &_frontend,
+    &_cms,
+    &_web3 {
+      border-radius: 2.4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0rem 8rem;
+      padding-top: 8rem;
+      background-image: url("../../../assets/images/pattern-two.png");
+      background-size: contain;
+    }
+    &_ui {
+      grid-area: ui;
+      background-color: $col-secondary-500;
+    }
+    &_frontend {
+      grid-area: frontend;
+      background-color: #95c4eb;
+      > div {
+        &:first-child {
+          margin-bottom: 9.9rem;
+        }
+      }
+    }
+    &_cms {
+      grid-area: cms;
+      background-color: #e75d45;
+      padding-bottom: 4.7rem;
+    }
+    &_web3 {
+      grid-area: web3;
+      background-color: #7479d9;
+      padding-bottom: 7.4rem;
+      > div {
+        &:first-child {
+          margin-bottom: 10.2rem;
+        }
+      }
+    }
+    &_backend {
+      grid-area: backend;
+      background-color: #53b28b;
+      border-radius: 2.4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8rem 8rem 6.1rem 7rem;
+
+      > div {
+        &:nth-child(1) {
+          max-width: 45.9rem;
+          margin-right: 5.3rem;
+        }
+        &:nth-child(2) {
+          width: 69.4rem;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

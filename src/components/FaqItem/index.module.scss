@@ -1,0 +1,78 @@
+.faqitem {
+  display: block;
+  margin-bottom: 4.8rem;
+  overflow: hidden;
+  summary {
+    display: block;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h5 {
+      font-weight: 800;
+      font-size: 2.8rem;
+      line-height: 116%;
+      font-family: $font-neue-regular;
+    }
+    > div {
+      width: 3.4rem;
+      height: 3.4rem;
+      border: 0.37rem solid $col-neutral-900;
+      border-radius: 1.2rem;
+      position: relative;
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1.2rem;
+        height: 0.3rem;
+        background-color: $col-neutral-900;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 0.5rem;
+        transition: all 0.6s;
+      }
+      &::before {
+        transform: translate(-50%, -50%) rotate(90deg);
+      }
+    }
+  }
+  &[open] {
+    animation-name: accordion-master;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    transform-origin: top;
+    summary > div::before {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
+  > div {
+    max-width: 85%;
+    p {
+      font-weight: 500;
+      font-size: 2.8rem;
+      line-height: 4rem;
+      color: $col-neutral-500;
+    }
+  }
+}
+
+@keyframes accordion-master {
+  from {
+    max-height: 3.6rem;
+  }
+  to {
+    max-height: 30rem;
+  }
+}
+
+@keyframes accordion-close {
+  from {
+    min-height: 30rem;
+  }
+  to {
+    min-height: 8.6rem;
+  }
+}

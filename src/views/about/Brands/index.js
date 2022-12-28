@@ -1,0 +1,129 @@
+import React from "react";
+import { brands, brands_box, brands_box_image } from "./index.module.scss";
+import { StaticImage } from "gatsby-plugin-image";
+
+const TrustedBrands = () => {
+  return (
+    <div className={brands}>
+      <h4>TRUSTED BY</h4>
+      <div className={brands_box}>
+        <StaticImage
+          className={brands_box_image}
+          src="../../../assets/images/logo-terra.png"
+          placeholder="blurred"
+          alt="Paper"
+        />
+        <StaticImage
+          className={brands_box_image}
+          src="../../../assets/images/logo-ebooks.png"
+          placeholder="blurred"
+          alt="Paper"
+        />
+        <StaticImage
+          className={brands_box_image}
+          src="../../../assets/images/logo-hues.png"
+          placeholder="blurred"
+          alt="Paper"
+        />
+        <StaticImage
+          className={brands_box_image}
+          src="../../../assets/images/logo-leafa.png"
+          placeholder="blurred"
+          alt="Paper"
+        />
+        <StaticImage
+          className={brands_box_image}
+          src="../../../assets/images/logo-level-up.svg"
+          placeholder="blurred"
+          alt="Puzzle"
+        />
+        <StaticImage
+          className={brands_box_image}
+          src="../../../assets/images/logo-ebooks.png"
+          placeholder="blurred"
+          alt="Paper"
+        />
+        <StaticImage
+          className={brands_box_image}
+          src="../../../assets/images/logo-hues.png"
+          placeholder="blurred"
+          alt="Paper"
+        />
+        <StaticImage
+          className={brands_box_image}
+          src="../../../assets/images/logo-leafa.png"
+          placeholder="blurred"
+          alt="Paper"
+        />
+        <StaticImage
+          className={brands_box_image}
+          src="../../../assets/images/logo-level-up.svg"
+          placeholder="blurred"
+          alt="Puzzle"
+        />
+        <StaticImage
+          className={brands_box_image}
+          src="../../../assets/images/logo-level-up.svg"
+          placeholder="blurred"
+          alt="Puzzle"
+        />
+        <StaticImage
+          className={brands_box_image}
+          src="../../../assets/images/logo-ebooks.png"
+          placeholder="blurred"
+          alt="Paper"
+        />
+        <StaticImage
+          className={brands_box_image}
+          src="../../../assets/images/logo-hues.png"
+          placeholder="blurred"
+          alt="Paper"
+        />
+        <StaticImage
+          className={brands_box_image}
+          src="../../../assets/images/logo-leafa.png"
+          placeholder="blurred"
+          alt="Paper"
+        />
+        <StaticImage
+          className={brands_box_image}
+          src="../../../assets/images/logo-level-up.svg"
+          placeholder="blurred"
+          alt="Puzzle"
+        />
+        <StaticImage
+          className={brands_box_image}
+          src="../../../assets/images/logo-level-up.svg"
+          placeholder="blurred"
+          alt="Puzzle"
+        />
+        <StaticImage
+          className={brands_box_image}
+          src="../../../assets/images/logo-ebooks.png"
+          placeholder="blurred"
+          alt="Paper"
+        />
+        <StaticImage
+          className={brands_box_image}
+          src="../../../assets/images/logo-hues.png"
+          placeholder="blurred"
+          alt="Paper"
+        />
+        <StaticImage
+          className={brands_box_image}
+          src="../../../assets/images/logo-leafa.png"
+          placeholder="blurred"
+          alt="Paper"
+        />
+        <StaticImage
+          className={brands_box_image}
+          src="../../../assets/images/logo-level-up.svg"
+          placeholder="blurred"
+          alt="Puzzle"
+        />
+      </div>
+    </div>
+  );
+};
+
+export default TrustedBrands;

@@ -1,0 +1,50 @@
+.about_hero {
+  padding: 13.2rem 12.7rem;
+  min-height: calc(100vh - 12rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 12rem;
+    line-height: 10rem;
+    font-family: $font-aeonik-bold;
+    color: $col-neutral-900;
+  }
+  p {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 4.4rem;
+    font-family: $font-aeonik-regular;
+    font-weight: 500;
+    color: $col-neutral-500;
+    max-width: 105.845rem;
+    margin: auto;
+    margin-top: 4.8rem;
+  }
+  &_paper,
+  &_puzzle,
+  &_globe,
+  &_monitor {
+    position: absolute;
+  }
+  &_paper {
+    top: 9.6rem;
+    left: 10.1rem;
+  }
+  &_puzzle {
+    top: 12.9rem;
+    right: 13.3rem;
+  }
+  &_globe {
+    bottom: 12.3rem;
+    left: 17.2rem;
+  }
+  &_monitor {
+    bottom: 5.56rem;
+    right: 15rem;
+  }
+}

@@ -1,0 +1,107 @@
+.testimonial {
+  padding: 13.2rem 12.7rem;
+  background-image: url(/images/testimonial-bg-pattern.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  > div {
+    &:first-child {
+      margin: auto;
+    }
+  }
+  h2 {
+    font-weight: 800;
+    font-size: 6.30828rem;
+    line-height: 7.2rem;
+    text-align: center;
+    max-width: 92.408rem;
+    margin: auto;
+    margin-top: 6.9rem;
+    margin-bottom: 8.3rem;
+    font-family: $font-neue-bold;
+  }
+  &_box {
+    background-color: #f9f5ff;
+    max-width: 117.3rem;
+    margin: auto;
+    padding: 16.11rem;
+    padding-bottom: 6rem;
+    border-radius: 3.18534rem;
+    position: relative;
+    overflow: hidden;
+    > p {
+      font-family: $font-aeonik-regular;
+      font-weight: 500;
+      font-size: 2.94644rem;
+      line-height: 5.2rem;
+      position: relative;
+      color: #443f3d;
+      &:before {
+        content: url("/icons/icon-quote.svg");
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 5.4rem;
+        width: 4.3rem;
+        transform: translate(-9rem, -5rem);
+      }
+    }
+  }
+  &_carousel {
+    margin-top: 7.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_name {
+      display: flex;
+      align-items: center;
+      > div {
+        &:nth-child(1) {
+          border-radius: 50%;
+          height: 4.77rem;
+          width: 4.77rem;
+          margin-right: 1.3rem;
+          background-color: $col-primary-700;
+        }
+        &:nth-child(2) {
+          h5 {
+            font-weight: 800;
+            font-size: 2.0224rem;
+            line-height: 2rem;
+            margin-bottom: 0.2rem;
+            font-family: $font-neue-bold;
+            color: $col-neutral-900;
+          }
+          p {
+            font-family: $font-aeonik-regular;
+            font-weight: 500;
+            font-size: 1.5168rem;
+            line-height: 2rem;
+            margin-bottom: -0.8rem;
+            color: $col-neutral-600;
+          }
+        }
+      }
+    }
+    &_indicators {
+      display: flex;
+      align-items: center;
+
+      > div {
+        cursor: pointer;
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        background: rgba(51, 51, 51, 0.25);
+        &:nth-child(2) {
+          margin: 0 1.3rem;
+        }
+      }
+    }
+    &_deco {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

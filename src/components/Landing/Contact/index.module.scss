@@ -1,0 +1,33 @@
+.contact {
+  padding: 0 12.7rem;
+  padding-bottom: 2rem;
+  &_box {
+    padding: 15.2rem 13.3rem;
+    position: relative;
+  }
+  h2 {
+    margin-bottom: 5.2rem;
+    font-size: 6.6rem;
+    line-height: 116%;
+    font-family: $font-neue-bold;
+    max-width: 117.7rem;
+  }
+  &_box {
+    background-color: #f9f6fe;
+    border-radius: 4rem;
+    overflow: hidden;
+    &_buttons {
+      display: flex;
+      button {
+        &:nth-child(1) {
+          margin-right: 3rem;
+        }
+      }
+    }
+    &_deco {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}

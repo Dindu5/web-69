@@ -1,0 +1,85 @@
+$col-white: #ffffff;
+
+// NEUTRALS
+
+$col-neutral-50: #f8f8f7;
+$col-neutral-100: #efefef;
+$col-neutral-200: #cfcbc9;
+$col-neutral-300: #bcb6b3;
+$col-neutral-400: #a9a19e;
+$col-neutral-500: #968c88;
+$col-neutral-600: #827773;
+$col-neutral-700: #443f3d;
+$col-neutral-800: #2d2928;
+$col-neutral-900: #151413;
+
+// PRIMARY
+
+$col-primary-50: #ededed;
+$col-primary-100: #dad7df;
+$col-primary-200: #b8a2e1;
+$col-primary-300: #ae91e3;
+$col-primary-400: #a37ee5;
+$col-primary-500: #996be9;
+$col-primary-600: #8952e6;
+$col-primary-700: #7c3aed;
+$col-primary-800: #6d1df7;
+$col-primary-900: #5500e8;
+
+// PRIMARY
+
+$col-secondary-50: #fdecce;
+$col-secondary-100: #fcdfae;
+$col-secondary-200: #face85;
+$col-secondary-300: #f8be5c;
+$col-secondary-400: #f7ae34;
+$col-secondary-500: #f59e0b;
+$col-secondary-600: #cc8409;
+$col-secondary-700: #a36907;
+$col-secondary-800: #7a4f05;
+$col-secondary-900: #523504;
+
+// *********** //
+// ** FONTS ** //
+// *********** //
+
+// NEUE
+$font-neue-light: "Neue-light", sans-serif;
+$font-neue-regular: "Neue-regular", sans-serif;
+$font-neue-bold: "Neue-bold", sans-serif;
+
+// FOUNDERS GROTESK
+$font-founders-light: "founders-light", sans-serif;
+$font-founders-light-italic: "founders-light-italic", sans-serif;
+$font-founders-regular: "founders-regular", sans-serif;
+$font-founders-regular-italic: "founders-regular-italic", sans-serif;
+$font-founders-medium: "founders-medium", sans-serif;
+$font-founders-medium-italic: "founders-medium-italic", sans-serif;
+$font-founders-semibold: "founders-semibold", sans-serif;
+$font-founders-semibold-italic: "founders-semibold-italic", sans-serif;
+$font-founders-bold: "founders-bold", sans-serif;
+$font-founders-bold-italic: "founders-bold-italic", sans-serif;
+
+// AEONIK
+$font-aeonik-light: "aeonik-light", sans-serif;
+$font-aeonik-light-italic: "aeonik-light-italic", sans-serif;
+$font-aeonik-regular: "aeonik-regular", sans-serif;
+$font-aeonik-regular-italic: "aeonik-regular-italic", sans-serif;
+$font-aeonik-bold: "aeonik-bold", sans-serif;
+$font-aeonik-bold-italic: "aeonik-bold-italic", sans-serif;
+
+// BREAKPOINTS
+
+$breakpoints: (
+  "xxsm-mobile": 350px,
+  "xsm-mobile": 380px,
+  "ssm-mobile": 485px,
+  "sm-mobile": 550px,
+  "mobile": 650px,
+  "sm-tablet": 700px,
+  "md-tablet": 770px,
+  "tablet": 1023px,
+  "lg-tablet": 1025px,
+  "sm-desktop": 1200px,
+  "desktop": 1440px,
+) !default;
