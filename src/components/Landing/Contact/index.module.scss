@@ -1,9 +1,21 @@
 .contact {
-  padding: 0 12.7rem;
+  padding: 0 $body-padding-lg;
   padding-bottom: 2rem;
+  @include screenMax("tablet") {
+    padding: 0 $body-padding-md;
+  }
+  @include screenMax("mobile") {
+    padding: 0 $body-padding-sm;
+  }
   &_box {
     padding: 15.2rem 13.3rem;
     position: relative;
+    @include screenMax("tablet") {
+      padding: 12.2rem 5.3rem;
+    }
+    @include screenMax("mobile") {
+      padding: 10.2rem 3.3rem;
+    }
   }
   h2 {
     margin-bottom: 5.2rem;
@@ -11,16 +23,37 @@
     line-height: 116%;
     font-family: $font-neue-bold;
     max-width: 117.7rem;
+    @include screenMax("tablet") {
+      font-size: 5rem;
+      line-height: 106%;
+    }
+    @include screenMax("mobile") {
+      font-size: 4rem;
+      line-height: 116%;
+    }
   }
   &_box {
     background-color: #f9f6fe;
     border-radius: 4rem;
     overflow: hidden;
+
     &_buttons {
       display: flex;
+      @include screenMax("mobile") {
+        flex-direction: column;
+      }
       button {
+        z-index: 2;
+        @include screenMax("mobile") {
+          width: 100%;
+          box-shadow: 0.1px 0.1px 80px $col-primary-300;
+        }
         &:nth-child(1) {
           margin-right: 3rem;
+          @include screenMax("mobile") {
+            margin-right: 0rem;
+            margin-bottom: 3rem;
+          }
         }
       }
     }
@@ -28,6 +61,7 @@
       position: absolute;
       right: 0;
       bottom: 0;
+      z-index: 0;
     }
   }
 }

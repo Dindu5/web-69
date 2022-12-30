@@ -1,9 +1,15 @@
 .services {
-  padding: 13.2rem 12.7rem;
+  padding: 13.2rem $body-padding-lg;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  @include screenMax("tablet") {
+    padding: 10.2rem $body-padding-md;
+  }
+  @include screenMax("mobile") {
+    padding: 7.2rem $body-padding-sm;
+  }
   h2 {
     font-weight: 800;
     font-size: 5.9rem;
@@ -14,6 +20,15 @@
     max-width: 111.1rem;
     margin-top: 4.304rem;
     margin-bottom: 14.6rem;
+    @include screenMax("tablet") {
+      font-size: 4.9rem;
+      margin-bottom: 11.6rem;
+    }
+    @include screenMax("mobile") {
+      font-size: 3rem;
+      line-height: 4.8rem;
+      margin-bottom: 7.6rem;
+    }
   }
   &_title {
     font-weight: 800;
@@ -22,6 +37,10 @@
     color: $col-white;
     margin-bottom: 2.1rem;
     font-family: $font-neue-bold;
+    @include screenMax("tablet") {
+      font-size: 2rem;
+      margin-bottom: 1.6rem;
+    }
   }
   &_desc {
     font-weight: 500;
@@ -29,6 +48,10 @@
     line-height: 2.9rem;
     margin-bottom: 4rem;
     color: $col-white;
+    @include screenMax("tablet") {
+      font-size: 1.7rem;
+      margin-bottom: 2.5rem;
+    }
   }
   &_button {
     padding: 0;
@@ -39,6 +62,9 @@
     font-size: 2.4rem;
     line-height: 2.9rem;
     font-family: $font-founders-regular;
+    @include screenMax("tablet") {
+      font-size: 1.9rem;
+    }
   }
   &_box {
     max-width: 129.6rem;
@@ -50,6 +76,18 @@
       "ui frontend"
       "backend backend"
       "web3 cms";
+    @include screenMax("tablet") {
+      width: 100%;
+    }
+    @include screenMax("mobile") {
+      grid-template-areas:
+        "writing"
+        "ui"
+        "frontend"
+        "backend"
+        "web3"
+        "cms";
+    }
 
     &_writing {
       grid-area: writing;
@@ -57,15 +95,33 @@
       overflow: hidden;
       display: flex;
       justify-content: space-between;
+      @include screenMax("mobile") {
+        flex-direction: column;
+      }
       > div:first-child {
         background: rgba(108, 75, 141, 1);
         padding: 16.2rem 8rem 9.5rem 8rem;
         max-width: 69.9rem;
+        flex: 1;
+        @include screenMax("tablet") {
+          padding: 12.2rem 4rem 6.5rem 4rem;
+        }
+        @include screenMax("mobile") {
+          padding: 5rem 3rem 4rem 3rem;
+        }
       }
-      img {
+      > div:last-child {
         width: 59.7rem;
         height: 100%;
         object-fit: contain;
+        @include screenMax("tablet") {
+          max-width: 39.7rem;
+          width: 100%;
+        }
+        @include screenMax("mobile") {
+          max-width: 100%;
+          max-height: 25rem;
+        }
       }
     }
     &_images {
@@ -83,6 +139,14 @@
       padding-top: 8rem;
       background-image: url("../../../assets/images/pattern-two.png");
       background-size: contain;
+      @include screenMax("tablet") {
+        padding: 0rem 4rem;
+        padding-top: 4rem;
+      }
+      @include screenMax("mobile") {
+        padding: 0rem 3rem;
+        padding-top: 4rem;
+      }
     }
     &_ui {
       grid-area: ui;
@@ -94,6 +158,9 @@
       > div {
         &:first-child {
           margin-bottom: 9.9rem;
+          @include screenMax("mobile") {
+            margin-bottom: 4rem;
+          }
         }
       }
     }
@@ -101,14 +168,26 @@
       grid-area: cms;
       background-color: #e75d45;
       padding-bottom: 4.7rem;
+      @include screenMax("mobile") {
+        padding-bottom: 3.7rem;
+        > div:first-child {
+          margin-bottom: 2rem;
+        }
+      }
     }
     &_web3 {
       grid-area: web3;
       background-color: #7479d9;
       padding-bottom: 7.4rem;
+      @include screenMax("mobile") {
+        padding-bottom: 4rem;
+      }
       > div {
         &:first-child {
           margin-bottom: 10.2rem;
+          @include screenMax("mobile") {
+            margin-bottom: 5.2rem;
+          }
         }
       }
     }
@@ -120,16 +199,32 @@
       justify-content: space-between;
       align-items: center;
       padding: 8rem 8rem 6.1rem 7rem;
+      @include screenMax("tablet") {
+        padding: 4rem 4rem 5.1rem 5rem;
+      }
+      @include screenMax("mobile") {
+        flex-direction: column;
+        padding: 4.5rem 3rem 4rem 3rem;
+      }
 
       > div {
         &:nth-child(1) {
           max-width: 45.9rem;
           margin-right: 5.3rem;
+          @include screenMax("mobile") {
+            max-width: 100%;
+            margin-right: 0rem;
+            margin-bottom: 4rem;
+          }
         }
         &:nth-child(2) {
           width: 69.4rem;
           height: 100%;
           object-fit: contain;
+          @include screenMax("tablet") {
+            max-width: 40rem;
+            width: 100%;
+          }
         }
       }
     }

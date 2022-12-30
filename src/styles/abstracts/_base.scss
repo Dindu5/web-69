@@ -13,7 +13,7 @@ html {
   margin: 0;
   height: 100%;
   @include screenMax("tablet") {
-    font-size: calc(100vw / 950 * 10);
+    font-size: calc(100vw / 1023 * 10);
   }
   @include screenMax("mobile") {
     font-size: calc(100vw / 650 * 10);

@@ -1,13 +1,19 @@
 .hero {
   display: flex;
   align-items: center;
-  padding: 13.2rem 12.7rem;
+  padding: 13.2rem $body-padding-lg;
   justify-content: center;
   flex-direction: column;
   position: relative;
+  @include screenMax("tablet") {
+    padding: 10.2rem $body-padding-md;
+  }
+  @include screenMax("mobile") {
+    padding: 7.2rem $body-padding-sm;
+    padding-bottom: 13.5rem;
+  }
   h1 {
-    font-weight: 800;
-    font-size: 80px;
+    font-size: 8rem;
     line-height: 140%;
     text-align: center;
     max-width: 116.7rem;
@@ -15,6 +21,13 @@
     font-family: $font-neue-bold;
     margin: 3.1rem 0rem;
     color: $col-neutral-900;
+    @include screenMax("tablet") {
+      font-size: 6.5rem;
+      line-height: 120%;
+    }
+    @include screenMax("mobile") {
+      font-size: 5rem;
+    }
   }
   h3 {
     font-weight: 500;
@@ -24,12 +37,21 @@
     color: $col-neutral-500;
     max-width: 137.5rem;
     margin-bottom: 3.1rem;
+    @include screenMax("tablet") {
+      font-size: 2.5rem;
+      line-height: 4.6rem;
+    }
+    @include screenMax("mobile") {
+      font-size: 1.8rem;
+      line-height: 3.6rem;
+    }
   }
   &_btns {
     display: flex;
     align-items: center;
     justify-content: center;
     button {
+      z-index: 4;
       &:first-child {
         margin-right: 3rem;
       }
@@ -40,11 +62,36 @@
       position: absolute !important;
       left: 19rem;
       bottom: 0;
+      height: 18.7rem;
+      width: 20.2rem;
+      object-fit: contain;
+      z-index: 0;
+      @include screenMax("tablet") {
+        left: calc(19rem - $body-padding-lg);
+      }
+      @include screenMax("mobile") {
+        left: -2rem;
+        height: 13.7rem;
+        width: 15.2rem;
+        bottom: -3rem;
+      }
     }
     &_bulb {
       position: absolute !important;
       right: 15rem;
       bottom: 0;
+      height: 21.4rem;
+      width: 14.9rem;
+      object-fit: contain;
+      @include screenMax("tablet") {
+        right: calc(15rem - $body-padding-lg);
+      }
+      @include screenMax("mobile") {
+        right: 0;
+        height: 13.4rem;
+        width: 9.9rem;
+        bottom: -3rem;
+      }
     }
     &_purple {
       position: absolute !important;
@@ -54,6 +101,14 @@
       width: 55.2rem;
       border-radius: 50%;
       transform: translateX(-20%);
+      @include screenMax("tablet") {
+        height: 45.2rem;
+        width: 45.2rem;
+      }
+      @include screenMax("mobile") {
+        height: 35.2rem;
+        width: 35.2rem;
+      }
     }
     &_success {
       position: absolute !important;
@@ -63,6 +118,14 @@
       width: 55.2rem;
       border-radius: 50%;
       transform: translate(10%, 50%);
+      @include screenMax("tablet") {
+        height: 45.2rem;
+        width: 45.2rem;
+      }
+      @include screenMax("mobile") {
+        height: 35.2rem;
+        width: 35.2rem;
+      }
     }
   }
 }

@@ -24,7 +24,14 @@ const Testimonial = () => {
         What our <span className="col-error">clients</span> say about our{" "}
         <span>services</span>
       </h2>
+
       <div className={testimonial_box}>
+        <StaticImage
+          className={testimonial_carousel_deco}
+          src="../../../assets/images/testimonial-deco.svg"
+          placeholder="blurred"
+          alt="Rocket"
+        />
         <p>
           I can’t say enough good things about web69. They were great partners,
           really drove the creative direction and successfully delivered the
@@ -46,12 +53,6 @@ const Testimonial = () => {
             <div></div>
           </div>
         </div>
-        <StaticImage
-          className={testimonial_carousel_deco}
-          src="../../../assets/images/testimonial-deco.svg"
-          placeholder="blurred"
-          alt="Rocket"
-        />
       </div>
     </section>
   );

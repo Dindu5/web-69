@@ -1,35 +1,72 @@
 .footer {
   margin-top: 2rem;
-  padding: 5.2rem 12.7rem;
+  padding: 5.2rem $body-padding-lg;
   background: #7c3aed;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-image: url("/images/footer-bg.svg");
-  background-position: bottom;
+  background-position: bottom center;
   background-repeat: no-repeat;
+  @include screenMax("tablet") {
+    padding: 5.2rem $body-padding-md;
+  }
+  @include screenMax("mobile") {
+    padding: 5.2rem $body-padding-sm;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   h4 {
     color: $col-white;
     font-weight: 700;
     font-size: 2.4rem;
     line-height: 2.4rem;
     font-family: $font-aeonik-bold;
+    @include screenMax("tablet") {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
   }
   &_icon {
     margin-left: 1.6rem;
     cursor: pointer;
+    height: 3.4rem;
+    width: 3.4rem;
+    object-fit: contain;
+    @include screenMax("mobile") {
+      margin-left: 0;
+    }
+    &_container {
+      @include screenMax("mobile") {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 0;
+      }
+    }
   }
   &_links {
     display: flex;
+    @include screenMax("mobile") {
+      margin: 4rem 0;
+      margin-bottom: 3rem;
+    }
     a {
       font-weight: 500;
       font-family: $font-founders-medium;
       font-size: 2.4rem;
       line-height: 2.9rem;
       color: $col-white;
+      @include screenMax("tablet") {
+        font-size: 2rem;
+        line-height: 2rem;
+      }
 
       &:nth-child(2) {
         margin: 0 7rem;
+        @include screenMax("tablet") {
+          margin: 0 4rem;
+        }
       }
     }
   }

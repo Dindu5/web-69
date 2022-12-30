@@ -1,7 +1,12 @@
 import { Link } from "gatsby";
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-import { footer, footer_icon, footer_links } from "./index.module.scss";
+import {
+  footer,
+  footer_icon,
+  footer_links,
+  footer_icon_container,
+} from "./index.module.scss";
 
 const Footer = () => {
   return (
@@ -12,7 +17,7 @@ const Footer = () => {
         <Link to="/legal">Legal</Link>
         <Link to="/blog">Blog</Link>
       </div>
-      <div>
+      <div className={footer_icon_container}>
         <StaticImage
           className={footer_icon}
           src="../../assets/images/icon-linkedin.svg"
