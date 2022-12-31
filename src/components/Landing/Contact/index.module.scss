@@ -1,7 +1,7 @@
 .contact {
   padding: 0 $body-padding-lg;
   padding-bottom: 2rem;
-
+  mask-image: -webkit-radial-gradient(white, black);
   -webkit-mask-image: -webkit-radial-gradient(white, black);
   @include screenMax("tablet") {
     padding: 0 $body-padding-md;
@@ -38,8 +38,10 @@
     background-color: #f9f6fe;
     border-radius: 4rem;
     overflow: hidden !important;
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
+    mask-image: -webkit-radial-gradient(white, black);
     -webkit-mask-image: -webkit-radial-gradient(white, black);
 
     &_buttons {

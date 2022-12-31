@@ -42,8 +42,10 @@
     border-radius: 3.18534rem;
     position: relative;
     overflow: hidden;
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
+    mask-image: -webkit-radial-gradient(white, black);
     -webkit-mask-image: -webkit-radial-gradient(white, black);
     @include screenMax("tablet") {
       padding: 10.11rem;
@@ -51,7 +53,7 @@
     }
     @include screenMax("mobile") {
       padding: 3rem;
-      padding-top: 9.4rem;
+      padding-top: 11rem;
     }
     > p {
       font-family: $font-aeonik-regular;
@@ -82,7 +84,7 @@
           transform: translate(-7rem, -3rem);
         }
         @include screenMax("mobile") {
-          transform: translate(0rem, -6rem);
+          transform: translate(0rem, -7.5rem);
         }
       }
     }

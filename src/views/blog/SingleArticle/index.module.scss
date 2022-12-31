@@ -115,8 +115,10 @@
     width: 100%;
     height: auto;
     border-radius: 2.51rem;
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
+    mask-image: -webkit-radial-gradient(white, black);
     -webkit-mask-image: -webkit-radial-gradient(white, black);
   }
   &_content {

@@ -93,8 +93,10 @@
       grid-area: writing;
       border-radius: 2.4rem;
       overflow: hidden;
+      backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
       -moz-backface-visibility: hidden;
+      mask-image: -webkit-radial-gradient(white, black);
       -webkit-mask-image: -webkit-radial-gradient(white, black);
       display: flex;
       justify-content: space-between;
