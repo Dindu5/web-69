@@ -56,6 +56,18 @@
         margin-right: 3rem;
       }
     }
+    @include screenMax("ssm-mobile") {
+      flex-direction: column;
+      width: 100%;
+      button {
+        z-index: 4;
+        width: 100% !important;
+        &:first-child {
+          margin-right: 0rem;
+          margin-bottom: 3rem;
+        }
+      }
+    }
   }
   &_deco {
     &_rocket {
