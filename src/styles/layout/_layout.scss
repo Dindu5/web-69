@@ -1,20 +1,36 @@
 .blog {
   &-layout {
     display: flex;
-    padding: 8rem 12.7rem;
+    padding: 8rem $body-padding-lg;
     justify-content: space-between;
     position: relative;
+    @include screenMax("tablet") {
+      padding: 8rem $body-padding-md;
+    }
+    @include screenMax("mobile") {
+      padding: 6rem $body-padding-sm;
+    }
     aside {
       position: sticky;
       position: -webkit-sticky;
       top: 4rem;
       height: 25rem;
+      margin-right: 2rem;
+      @include screenMax("mobile") {
+        margin-right: 6rem;
+      }
     }
   }
   &-single-layout {
     max-width: 115rem;
     margin: auto;
-    padding: 7.5rem 12.7rem;
+    padding: 7.5rem $body-padding-lg;
     box-sizing: border-box;
+    @include screenMax("tablet") {
+      padding: 7rem $body-padding-md;
+    }
+    @include screenMax("mobile") {
+      padding: 6rem $body-padding-sm;
+    }
   }
 }

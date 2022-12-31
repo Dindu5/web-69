@@ -1,4 +1,8 @@
 .sidebar {
+  z-index: 6;
+  @include screenMax("mobile") {
+    margin-top: 7rem;
+  }
   h4 {
     font-weight: 600;
     font-size: 2.8rem;
@@ -6,8 +10,17 @@
     color: $col-neutral-700;
     font-family: $font-founders-regular;
     margin-bottom: 3.5rem;
+
+    @include screenMax("mobile") {
+      display: none;
+    }
   }
   &_links {
+    @include screenMax("mobile") {
+      position: absolute;
+      left: 0;
+    }
+
     > div {
       display: flex;
       align-items: center;
@@ -15,8 +28,15 @@
       padding-right: 3.9rem;
       margin-bottom: 1rem;
       border-radius: 0.6rem;
+      width: auto;
       cursor: pointer;
       transition: all 0.6s;
+      position: relative;
+      overflow: hidden;
+      @include screenMax("mobile") {
+        padding-right: 0.9rem;
+        width: 4.5rem;
+      }
 
       p {
         font-weight: 500;
@@ -26,6 +46,17 @@
         margin-left: 1.6rem;
         font-family: $font-founders-medium;
         margin-bottom: -0.6rem;
+        white-space: nowrap;
+      }
+      &:hover {
+        @include screenMax("mobile") {
+          width: auto !important;
+          transition: all 0.5s;
+          background-color: $col-primary-50;
+        }
+      }
+      svg {
+        min-width: 2.4rem;
       }
       svg path {
         fill: $col-neutral-700 !important;

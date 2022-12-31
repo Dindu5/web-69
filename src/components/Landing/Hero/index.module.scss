@@ -104,6 +104,7 @@
       @include screenMax("tablet") {
         height: 45.2rem;
         width: 45.2rem;
+        display: none;
       }
       @include screenMax("mobile") {
         height: 35.2rem;
@@ -121,6 +122,7 @@
       @include screenMax("tablet") {
         height: 45.2rem;
         width: 45.2rem;
+        display: none;
       }
       @include screenMax("mobile") {
         height: 35.2rem;

@@ -1,5 +1,11 @@
 .mission {
-  padding: 3.2rem 12.7rem;
+  padding: 3.2rem $body-padding-lg;
+  @include screenMax("tablet") {
+    padding: 3.2rem $body-padding-md;
+  }
+  @include screenMax("mobile") {
+    padding: 3.2rem $body-padding-sm;
+  }
   h4 {
     font-weight: 800;
     font-size: 5.4rem;
@@ -7,6 +13,13 @@
     font-family: $font-neue-bold;
     color: $col-neutral-900;
     margin-bottom: 2.97rem;
+    @include screenMax("tablet") {
+      font-size: 4.4rem;
+    }
+    @include screenMax("mobile") {
+      font-size: 3.4rem;
+      line-height: 5.1rem;
+    }
   }
   p {
     font-weight: 700;
@@ -15,6 +28,15 @@
     color: #00203e;
     font-family: $font-aeonik-light;
     margin-bottom: 5.5rem;
+    @include screenMax("tablet") {
+      font-size: 2.2rem;
+      line-height: 4rem;
+    }
+    @include screenMax("mobile") {
+      font-size: 1.8rem;
+      line-height: 4rem;
+      margin-bottom: 4rem;
+    }
   }
   h6 {
     font-weight: 700;
@@ -23,6 +45,13 @@
     font-family: $font-aeonik-bold;
     color: #440e6f;
     margin-bottom: 4.4rem;
+    @include screenMax("tablet") {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+    @include screenMax("mobile") {
+      font-size: 2.5rem;
+    }
   }
   &_box {
     max-width: 101.981rem;

@@ -2,6 +2,16 @@
   padding-bottom: 24.1rem;
   padding-top: 12rem;
   overflow: hidden;
+  @include screenMax("tablet") {
+    padding: 0 $body-padding-md;
+    padding-bottom: 14.1rem;
+    padding-top: 6rem;
+  }
+  @include screenMax("mobile") {
+    padding: 0 $body-padding-sm;
+    padding-bottom: 14.1rem;
+    padding-top: 6rem;
+  }
 
   h4 {
     font-weight: 700;
@@ -12,6 +22,13 @@
     max-width: 101.981rem;
     margin: auto;
     margin-bottom: 6rem;
+    @include screenMax("tablet") {
+      font-size: 2.5rem;
+      line-height: 4rem;
+    }
+    @include screenMax("mobile") {
+      font-size: 2.2rem;
+    }
   }
 
   &_box {
@@ -25,10 +42,15 @@
     width: calc(200px * 14);
     &_image {
       margin-left: 10.8rem;
-      img {
-        height: 7.7rem;
-        width: auto;
-        object-fit: contain;
+      height: 7.7rem;
+      width: auto;
+      object-fit: contain;
+      @include screenMax("tablet") {
+        margin-left: 6.8rem;
+      }
+      @include screenMax("mobile") {
+        margin-left: 4.8rem;
+        height: 5rem;
       }
     }
   }

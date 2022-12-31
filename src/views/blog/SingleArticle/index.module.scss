@@ -10,6 +10,9 @@
       border: none;
       margin-right: 2.1rem;
       padding: 0.6rem 0.8rem;
+      @include screenMax("tablet") {
+        padding: 0.5rem 0.6rem;
+      }
     }
     p {
       font-weight: 700;
@@ -18,6 +21,9 @@
       letter-spacing: -0.06rem;
       color: #061c23;
       font-family: $font-aeonik-bold;
+      @include screenMax("tablet") {
+        font-size: 2.6rem;
+      }
     }
   }
   h3 {
@@ -27,6 +33,10 @@
     color: #2e3749;
     font-family: $font-neue-bold;
     margin-bottom: 2.4rem;
+    @include screenMax("tablet") {
+      font-size: 3.2rem;
+      line-height: 4.3rem;
+    }
   }
   &_details {
     display: flex;
@@ -44,6 +54,9 @@
           line-height: 1.9rem;
           color: #5d6a83;
           font-family: $font-aeonik-regular;
+          @include screenMax("tablet") {
+            font-size: 1.36rem;
+          }
         }
       }
       &:nth-child(2) {
@@ -56,6 +69,9 @@
           line-height: 1.9rem;
           color: #5d6a83;
           font-family: $font-aeonik-regular;
+          @include screenMax("tablet") {
+            font-size: 1.36rem;
+          }
         }
       }
 
@@ -109,6 +125,9 @@
       font-family: $font-aeonik-regular;
       margin-top: 6rem;
       margin-bottom: 4rem;
+      @include screenMax("tablet") {
+        font-size: 2.2rem;
+      }
     }
     p {
       font-weight: 500;
@@ -117,6 +136,9 @@
       color: rgba(46, 55, 73, 0.7);
       font-family: $font-aeonik-regular;
       margin-bottom: 5.7rem;
+      @include screenMax("tablet") {
+        font-size: 1.8rem;
+      }
     }
   }
   hr {
@@ -129,6 +151,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 6rem;
+    @include screenMax("tablet") {
+      grid-gap: 2.5rem;
+    }
+    @include screenMax("mobile") {
+      grid-template-columns: 1fr;
+      grid-gap: 4.5rem;
+    }
   }
   &_related {
     display: flex;

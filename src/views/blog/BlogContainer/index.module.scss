@@ -1,10 +1,19 @@
 .blog_container {
+  position: relative;
   max-width: 121.524rem;
   margin-left: auto;
+  @include screenMax("mobile") {
+    padding-top: 7rem;
+  }
   &_title {
     display: flex;
     align-items: center;
     margin-bottom: 3.1rem;
+    @include screenMax("mobile") {
+      position: absolute;
+      top: 0;
+      left: -6rem;
+    }
     > div {
       height: 3.9rem;
       width: 3.9rem;
@@ -23,5 +32,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 4.7rem;
+    @include screenMax("tablet") {
+      grid-gap: 2.7rem;
+    }
+    @include screenMax("mobile") {
+      grid-template-columns: 1fr;
+    }
   }
 }

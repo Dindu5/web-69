@@ -25,6 +25,12 @@
     border: 0.27931rem solid #f2f6ff;
     box-shadow: 0px 0.5rem 0px rgba(0, 0, 0, 0.06);
     border-radius: 0.8rem !important;
+    @include screenMax("tablet") {
+      font-size: 1rem;
+      padding: 0.9rem 1.5rem;
+      padding-bottom: 0.6rem;
+      bottom: 2.3rem;
+    }
   }
   h4 {
     font-weight: 700;
@@ -33,6 +39,14 @@
     line-height: 3.7rem;
     color: #061c23;
     margin: 2.7rem 0rem;
+    @include screenMax("tablet") {
+      font-size: 2rem;
+      line-height: 3rem;
+      margin: 2rem 0rem;
+    }
+    @include screenMax("mobile") {
+      margin-bottom: 1.5rem;
+    }
   }
   &_author {
     display: flex;
@@ -42,12 +56,21 @@
       height: 4.1rem;
       margin-right: 1.4rem;
       border-radius: 50%;
+      @include screenMax("tablet") {
+        width: 3.1rem;
+        height: 3.1rem;
+      }
     }
     p {
       font-weight: 500;
       font-size: 1.95517rem;
       line-height: 2.5rem;
       color: #5d6a83;
+      @include screenMax("tablet") {
+        font-size: 1.55517rem;
+        line-height: 1.5rem;
+        margin-bottom: -0.7rem;
+      }
     }
   }
   &_small {

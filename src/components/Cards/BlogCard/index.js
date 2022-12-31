@@ -18,7 +18,7 @@ const BlogCard = ({ title, image, avatar, author, badge, small = false }) => {
         onClick={() => navigate(`/blog/${slug}`)}
       >
         {image}
-        {small && <div className={blog_card_badge}>{badge}</div>}
+        {!small && <div className={blog_card_badge}>{badge}</div>}
       </div>
 
       <h4>{title}</h4>
