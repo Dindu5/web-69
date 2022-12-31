@@ -115,6 +115,9 @@
     width: 100%;
     height: auto;
     border-radius: 2.51rem;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
   }
   &_content {
     h6 {

@@ -93,6 +93,9 @@
       grid-area: writing;
       border-radius: 2.4rem;
       overflow: hidden;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -webkit-mask-image: -webkit-radial-gradient(white, black);
       display: flex;
       justify-content: space-between;
       @include screenMax("mobile") {

@@ -5,6 +5,9 @@
     cursor: pointer;
     > div {
       border-radius: 2.24rem;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -webkit-mask-image: -webkit-radial-gradient(white, black);
     }
   }
   &_badge {
